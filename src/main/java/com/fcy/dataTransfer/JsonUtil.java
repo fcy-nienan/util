@@ -56,7 +56,7 @@ public class JsonUtil {
     }
     public static void main(String[] args) throws Exception{
         String[][] map=getMap(new test2());
-        Dis.printArray(map);
+        Dis.oneArray(map);
         test2 t=new test2();
         Object o=t.getClass().getSuperclass();
         while (o!=null){
