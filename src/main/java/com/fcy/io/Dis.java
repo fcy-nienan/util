@@ -8,13 +8,14 @@ import java.io.BufferedReader;
  * @date: 2019-05-10  1:36
  */
 public class Dis {
+    private static final String lineSeparator=System.lineSeparator();
     public static void twoArray(Object[][] objects){
         StringBuilder builder=new StringBuilder();
         for(int i=0;i<objects.length;i++){
             for(int j=0;j<objects[i].length;j++){
                 builder.append(objects[i][j]).append("\t");
             }
-            builder.append('\n');
+            builder.append(lineSeparator);
         }
         System.out.println(builder.toString());
     }
